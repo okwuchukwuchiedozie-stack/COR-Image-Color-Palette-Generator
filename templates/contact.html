@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card classy-card border-0 shadow p-4 p-md-5 rounded-4">
+            <h2 class="h4 fw-bold text-center mb-2 text-dark">Connect With Studio</h2>
+            <p class="text-muted small text-center mb-4">Have configuration inquiries? Drop a line via the secure dispatch matrix block below.</p>
+
+            {{ render_form(form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}
